@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: producer-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest # Default RabbitMQ username
+    password: guest # Default RabbitMQ password
+
+server:
+  port: 8080 # Default port for producer service

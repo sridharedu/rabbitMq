@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: consumer-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest # Default RabbitMQ username
+    password: guest # Default RabbitMQ password
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rabbitmq_demo # DB name from docker-compose
+    username: user # DB user from docker-compose
+    password: password # DB password from docker-compose
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Creates/updates schema based on entities
+    show-sql: true # Logs SQL statements, useful for debugging
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8081 # Default port for consumer service
