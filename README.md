@@ -23,7 +23,7 @@ All RabbitMQ infrastructure is run via **Docker Compose**, and the services are 
 ---
 
 ### ✅ **Acceptance Criteria**
-
+# Most Important : Comment the code and explain the flow in simple terms — ideal for learning, walkthroughs, or interview discussions.
 1. **Project Setup**
 
    * Docker Compose sets up:
