@@ -8,6 +8,7 @@ This is a hands-on Java-based microservices project that demonstrates **asynchro
 
 The system includes:
 
+
 * A **Producer Service** that publishes domain events to RabbitMQ (e.g., user signup or payment).
 * A **Consumer Service** that receives these events and **persists the data** into a PostgreSQL database.
 
